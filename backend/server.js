@@ -6,8 +6,9 @@ var admin = require("firebase-admin");
 var serviceAccount = require("./access.json");
 
 const { Firestore } = require("@google-cloud/firestore");
-// Imports the Google Cloud client library.
-const { Storage } = require("@google-cloud/storage");
+
+// Deployed via gcloud builds submit --tag gcr.io/uncle-store-76331/backend
+// You will need to authenticate before deploying
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
@@ -21,10 +22,12 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
+// Landing message
 app.get("/", async (req, res) => {
   res.json("Welcome to uncle store API.");
 });
 
+// GET request to load list of items, returns an array of items
 app.get("/listItems", async function (req, res) {
   let listOfItems = [];
 
@@ -37,6 +40,7 @@ app.get("/listItems", async function (req, res) {
   res.json(listOfItems);
 });
 
+// POST request to add item, takes in item parameters and adds to database
 app.post("/addItem", async function (req, res) {
   const item = req.body;
 
@@ -46,6 +50,7 @@ app.post("/addItem", async function (req, res) {
   });
 });
 
+// DELETE request to remove item from database based on id
 app.delete("/deleteItem", async function (req, res) {
   const item = req.body;
   const id = item.itemToDelete.id;
@@ -58,6 +63,7 @@ app.delete("/deleteItem", async function (req, res) {
     });
 });
 
+// POST request to update item details, based on id provided
 app.post("/updateItem", async function (req, res) {
   const item = req.body;
 
