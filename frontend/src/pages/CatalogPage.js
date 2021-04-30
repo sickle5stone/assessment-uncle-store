@@ -21,7 +21,7 @@ class CatalogPage extends React.Component {
     this.state = {
       isOpen: false,
       isAdminOpen: false,
-      adminMode: true,
+      adminMode: false,
       input: {
         name: "",
         price: 0,

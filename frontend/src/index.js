@@ -1,7 +1,7 @@
 import "./index.css";
 import "@blueprintjs/core/lib/css/blueprint.css";
 
-import App from "./pages/CatalogPage.js";
+import MainPage from "./pages/CatalogPage.js";
 import { Provider } from "redux-zero/react";
 import React from "react";
 import ReactDOM from "react-dom";
@@ -11,7 +11,7 @@ import store from "./store/store.js";
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
-      <App />
+      <MainPage />
     </Provider>
   </React.StrictMode>,
   document.getElementById("root")
