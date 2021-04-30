@@ -21,6 +21,10 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
+app.get("/", async (req, res) => {
+  res.json("Welcome to uncle store API.");
+});
+
 app.get("/listItems", async function (req, res) {
   let listOfItems = [];
 
