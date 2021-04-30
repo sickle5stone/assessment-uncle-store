@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.45ff3c46.chunk.css",
+    "main.js": "/static/js/main.fb5cc6c4.chunk.js",
+    "main.js.map": "/static/js/main.fb5cc6c4.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.19ccc7f6.js",
+    "runtime-main.js.map": "/static/js/runtime-main.19ccc7f6.js.map",
+    "static/js/2.22d20f20.chunk.js": "/static/js/2.22d20f20.chunk.js",
+    "static/js/2.22d20f20.chunk.js.map": "/static/js/2.22d20f20.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.a9f02c960b5dfb98c16c2561619d1528.js": "/precache-manifest.a9f02c960b5dfb98c16c2561619d1528.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.45ff3c46.chunk.css.map": "/static/css/main.45ff3c46.chunk.css.map",
+    "static/js/2.22d20f20.chunk.js.LICENSE.txt": "/static/js/2.22d20f20.chunk.js.LICENSE.txt",
+    "static/media/ProfileCard.module.css": "/static/media/bg-pattern-card.8781c768.svg",
+    "static/media/bg-pattern-top.svg": "/static/media/bg-pattern-top.29a224c2.svg",
+    "static/media/logo.svg": "/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.19ccc7f6.js",
+    "static/js/2.22d20f20.chunk.js",
+    "static/css/main.45ff3c46.chunk.css",
+    "static/js/main.fb5cc6c4.chunk.js"
+  ]
+}
